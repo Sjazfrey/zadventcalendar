@@ -25,7 +25,7 @@ let audio22 = new Audio("music/22silverbells.mp3");
 let audio23 = new Audio("music/23There'sNoPlace.mp3");
 let audio24 = new Audio("music/24wewishyou.mp3");
 let audio25 = new Audio("music/25WeTheKingdom.mp3");
-//function to open door and coresponding door will open path function to line 26 imagesPath correct url && term == 11
+//function to open door and coresponding door will open path function to line 26 imagesPath correct url && term == 11./
 const openDoor = (path, open, event) => {
     let date = new Date();   
     const term = date.getMonth();
