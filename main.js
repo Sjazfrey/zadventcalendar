@@ -1,36 +1,43 @@
 const calendarContainer = document.querySelector(".container");
 const calendarDays = 25;
 let audio1 = new Audio("music/1Grinch.mp3");
-let audio2= new Audio("music/2HotChocolate.mp3");
+let audio2= new Audio("music/2MatthewWestTheHopeofChristmas.mp3");
 let audio3= new Audio("music/3cookies.mp3");
 let audio4 = new Audio("music/4Frostythesnowman.mp3");
-let audio5 = new Audio("music/5JingleBellRock.mp3");
-let audio6 = new Audio("music/6christmas.mp3");
-let audio7 = new Audio("music/7Penguin.mp3");
+let audio5 = new Audio("music/5OComeAllYeFaithful.mp3");
+let audio6 = new Audio("music/6TheShepherd'sSong.mp3");
+let audio7 = new Audio("music/7christmas.mp3");
 let audio8 = new Audio("music/8Dashingthroughthesnow.mp3");
 let audio9 = new Audio("music/9drummerboy.mp3");
-let audio10 = new Audio("music/10LittleSaintNick.mp3");
-let audio11 = new Audio("music/11hollyjolly.mp3");
+let audio10 = new Audio("music/10AnglesWeHaveHeard.mp3");
+let audio11 = new Audio("music/11WhatChildIsThis.mp3");
 let audio12= new Audio("music/12daysofchristmas.mp3");
 let audio13 = new Audio("music/13DecktheHalls.mp3");
 let audio14 = new Audio("music/14wethreekings.mp3");
-let audio15 = new Audio("music/15Joytotheworld.mp3");
+let audio15 = new Audio("music/15ShepardandAngels.mp3");
 let audio16 = new Audio("music/16JoytotheWorld.mp3");
-let audio17 = new Audio("music/17happybirthday.mp3");
+let audio17 = new Audio("music/17WhatChildIsThis.mp3");
 let audio18 = new Audio("music/18Snoopys.mp3");
-let audio19 = new Audio("music/19JingleBells3.mp3");
+let audio19 = new Audio("music/19CaroloftheBells.mp3");
 let audio20 = new Audio("music/20winterwonder.mp3");
 let audio21 = new Audio("music/21whitechristmas.mp3");
 let audio22 = new Audio("music/22silverbells.mp3");
 let audio23 = new Audio("music/23There'sNoPlace.mp3");
 let audio24 = new Audio("music/24wewishyou.mp3");
 let audio25 = new Audio("music/25WeTheKingdom.mp3");
+
 //function to open door and coresponding door will open path function to line 26 imagesPath correct url && term == 11./
+const month = (new Date()).getMonth()
+const year = (new Date()).getFullYear()
+if (month !=9 && year != 2022){
+    localStorage.removeItem("stayOpen") 
+}
 const openDoor = (path, open, event) => {
-    let date = new Date();   
-    const term = date.getMonth();
+    let date = new Date(); 
     const day = date.getDate();    
-    if ( open <= day && term == 11){  
+    const term = date.getMonth();
+    const year = date.getFullYear();  
+    if ( open <= 30 && term == 9 && year == 2022){  
         stopmusic()   
     if (open==1) {
         audio1.play()};
@@ -122,7 +129,10 @@ function stopmusic() {
  }
 
 const createCalendar = () => {
-    let image = ["gif", "jpeg", "jpeg", "gif", "gif", "jpeg", "gif", "jpeg", "jpeg", "gif", "jpeg", "jpg", "gif", "jpeg", "jpeg", "jpeg", "gif", "jpeg", "png", "jpeg", "jpeg", "gif", "jpeg", "jpeg", "jpg"]
+    let image = ["gif", "webp", "jpeg", "gif", "jpeg", "jpeg", "gif",
+     "gif", "jpeg", "gif", "jpeg", "jpg", "gif", "jpeg",
+      "jpeg", "jpeg", "webp", "webp", "png", "jpeg", "jpeg",
+       "jpeg", "jpeg", "webp", "jpg"]
     for(let i = 0; i < calendarDays; i++) {
         const calendarDoor = document.createElement("div");
         const calendarDoorText = document.createElement("div");
@@ -148,5 +158,5 @@ const createCalendar = () => {
         }
     }
 }
+
 createCalendar();
-  

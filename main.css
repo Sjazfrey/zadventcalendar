@@ -16,12 +16,13 @@
      /* columns 7  */
     grid-template-columns: repeat(7, 113px);
    /* rows 5 with fr unit=fraction certain amount to row */
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
-    "door door door door1 door2 door3 door4"
-    "door5 door6 door7 door8 door9 door10 door11"
-    "door12 door13 door14 door15 door16 door17 door18"
-    "door19 door20 door21 door22 door23 door24 door25";
+    "door door door door door1 door2 door3"
+    "door4 door5 door6 door7 door8 door9 door10"
+    "door11 door12 door13 door14 door15 door16 door17"
+    "door18 door19 door20 door21 door22 door23 door24"
+    "door25 . . . . . .";
  }
 
  .stopbutton {
@@ -35,27 +36,27 @@
  .image0 {
      background-image: url('');
      background-size: cover;
-     background-position: -105px;    
+     background-position: -50px;    
  }
  .image1 {
     background-image: url('');
     background-size: cover;
-    background-position: -55px;   
+    background-position: -75px;   
 }
 .image2 {
     background-image: url('');
     background-size: cover;   
-    background-position: -45px;  
+    background-position: -15px;  
 }
 .image3 {
     background-image: url('');
     background-size: cover;   
-    background-position: -5px;  
+    background-position: 90px;  
 }
 .image4 {
     background-image: url('');
     background-size: cover;   
-    background-position: -73px;  
+    background-position: -40px;  
 }
 .image5 {
     background-image: url('');
@@ -65,27 +66,27 @@
 .image6 {
     background-image: url('');
     background-size: cover;   
-    background-position: -12px;  
+    background-position: -3px;  
 }
 .image7{
     background-image: url('');
     background-size: cover;   
-    background-position: -10px; 
+    background-position: -39px; 
 }
 .image8{
     background-image: url('');
     background-size: cover;   
-    background-position: -90px;  
+    background-position: -75px;  
 }
 .image9{
     background-image: url('');
     background-size: cover;   
-    background-position: -35px;  
+    background-position: -15px;  
 }
 .image10{
     background-image: url('');
     background-size: cover;   
-    background-position: -90px;  
+    background-position: -190px;  
 }
 .image11{
     background-image: url('');
@@ -95,12 +96,12 @@
 .image12{
     background-image: url('');
     background-size: cover;   
-    background-position: -15px;  
+    background-position: -10px;  
 }
 .image13{
     background-image: url('');
     background-size: cover;   
-    background-position: -75px;  
+    background-position: -55px;  
 }
 .image14{
     background-image: url('');
@@ -110,7 +111,7 @@
 .image15{
     background-image: url('');
     background-size: cover;   
-    background-position: -125px;  
+    background-position: -110px;  
 }
 .image16{
     background-image: url('');
@@ -120,42 +121,42 @@
 .image17{
     background-image: url('');
     background-size: cover;   
-    background-position: -118px;  
+    background-position: -153px;  
 }
 .image18{
     background-image: url('');
     background-size: cover;   
-    background-position: -35px;  
+    background-position: -25px;  
 }
 .image19{
     background-image: url('');
     background-size: cover;   
-    background-position: -90px;  
+    background-position: -70px;  
 }
 .image20{
     background-image: url('');
     background-size: cover;   
-    background-position: -40px;  
+    background-position: -20px;  
 }
 .image21{
     background-image: url('');
     background-size: cover;  
-    background-position: -60px; 
+    background-position: -25px; 
 }
 .image22{
     background-image: url('');
     background-size: cover;   
-    background-position: -33px;  
+    background-position: -13px;  
 }
 .image23{
     background-image: url('');
     background-size: cover;   
-    background-position: -139px;  
+    background-position: -60px;
 }
 .image24{
     background-image: url('');
     background-size: cover;   
-    background-position: -15px;  
+    background-position: -1px;  
 }
 .text {
      height: 100%;
